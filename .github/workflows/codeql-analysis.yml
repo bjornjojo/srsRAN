@@ -63,7 +63,9 @@ jobs:
     #    uses a compiled language
 
     - run: |
-       cmake .
+       mkdir build
+       cd build
+       cmake ../.
        make 
 
     - name: Perform CodeQL Analysis
