@@ -75,5 +75,5 @@ jobs:
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
       with:
-          queries: +security-and-quality,octo-org/python-qlpack/show_ifs.ql@main
-          packs: +scope/pack1,scope/pack2@v1.2.3
+          queries: security-and-quality
+          #packs: +scope/pack1,scope/pack2@v1.2.3
