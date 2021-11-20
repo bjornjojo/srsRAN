@@ -3,6 +3,10 @@ name: "CodeQL Coding Standard Configuration File"
 disable-default-queries: true
 
 queries:
+  - name: Security and Quality
+    uses: security-and-quality
+  - name: Security Extended
+    uses: security-extended 
   - name: JPL Rules
     uses: github/codeql/cpp/ql/src/JPL_C@main
   - name: MISRA Rule 9-5-1
